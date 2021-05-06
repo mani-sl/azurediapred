@@ -1,0 +1,33 @@
+The static folder has related style sheets for the HTML webpage
+The templates folder has the actual HTML for the webpage
+model.pkl is the target model that is used to predict
+
+
+Steps for Azure cloud:
+1. Open portal.azure.com
+2. Login or signup as necessary, use the sign in with github to make process easier
+3. After you login, register for free trail for the azure services for a month
+4. Then, on the home page click on create resource
+5. select web app
+6. Fill the form as required
+Subscription - free trail
+resource group - either use an existing one(if you have) or create new
+Name: provide a name for your webapp
+Publish: code
+Runtime Stack: python version used in code
+
+make sure to change the Sku and size to F1 free
+
+leave the rest as is
+
+click on review + create
+7. review the specifications and click create. Your webapp deployment is now in progress after that's done you will see a message "Your deployment is complete"
+8. click on go to resources and then the deployement center to the left of the screen
+9. Now select the source for your code, in our case github
+10. then fill out the details
+Organization: that will be your git username(if you click the dropdown you must see your username by default)
+Repository: your repository name
+Branch: the master branch or any other as you created
+11. click save. This operation might take some time. After that is done click the overview link to the left of the page and click the URL mentioned there
+
+ 
